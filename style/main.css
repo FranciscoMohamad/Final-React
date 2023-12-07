@@ -1,0 +1,63 @@
+/*Estilos Generales*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-size: 1rem;
+    height: 100%; }
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    background-color: purple;
+    width: 100%;
+    position: sticky;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    gap: 5rem;
+    margin-top: 1rem;
+}
+
+button {
+    padding: .5rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.carrito {
+    padding-inline: 2rem;
+}
+
+.contenedor {
+    background-color: rgb(222, 215, 215);
+    text-align: center;
+    height: 10rem;
+}
+
+p {
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+.name {
+    position: absolute;
+    left: 0;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+
+
