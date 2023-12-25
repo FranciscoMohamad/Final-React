@@ -1,6 +1,6 @@
 import ItemListContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar'
-//importar
+
 
 const App = () => {
 
@@ -21,8 +21,6 @@ const App = () => {
         electronica={electronica}/>
       <ItemListContainer
         bienvenidos={bienvenidos}/>
-
-
     </>
   )
 }

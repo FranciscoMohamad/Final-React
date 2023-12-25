@@ -2,7 +2,7 @@ import React from 'react'
 
 const CartWidget = ({contador}) => {
   return (
-    <button>{contador}<i class="bi bi-cart3"></i></button>
+    <button>{contador}<i className="bi bi-cart3"></i></button>
   )
 }
 
