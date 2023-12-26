@@ -1,27 +1,27 @@
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import ItemDetailContainer from './components/ItemDetailContainer'
 import ItemListContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar'
+import Cart from './components/Cart'
 
 
 const App = () => {
 
-  const name = "Mohamad Ecommerce"
-  const home = "HOME"
-  const ropa = "ROPA"
-  const joyeria = "JOYERIA"
-  const electronica = "ELECTRONICA"
-  const bienvenidos = "Bienvenidos a mi Ecommerce"
-  return (
-    <>
 
-      <NavBar
-        name={name}
-        home={home}
-        ropa={ropa}
-        joyeria={joyeria}
-        electronica={electronica}/>
-      <ItemListContainer
-        bienvenidos={bienvenidos}/>
-    </>
+  return (
+    <BrowserRouter>
+
+      <NavBar/>
+      
+        <Routes>
+          <Route exact path='/' element={
+              <ItemListContainer />}>
+          </Route>
+          <Route exact path='/cart' element={<Cart/>}></Route>
+          <Route exact path='/categoria/:categoriaId' element ={<ItemListContainer/>}></Route>
+          <Route exact path='/producto/:id' element ={<ItemDetailContainer/>}></Route>
+        </Routes>
+    </BrowserRouter>
   )
 }
 
