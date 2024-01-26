@@ -1,32 +1,41 @@
-import React from 'react'
-import {Card, CardBody, Stack, Heading, Text, Divider, CardFooter, ButtonGroup} from '@chakra-ui/react'
-import ItemCount from './ItemCount'
-import { useParams } from 'react-router-dom'
+import { useContext, useState } from "react";
+import { toCapital } from "../helpers/toCapital"
+import ItemCount from "./ItemCount"
+import { CartContext } from "../Context/CartContext";
 
 
-const ItemDetail = ({producto}) => {
+const ItemDetail = ( {item} ) => {
 
-    /*const {productoId} = useParams()*/
+    const { cart, addToCart } = useContext(CartContext);
+    console.log(cart);
+
+    const [cantidad, setCantidad] = useState(1);
+
+    const handleRestar = () => {
+        cantidad > 1 && setCantidad(cantidad - 1)
+    }
+
+    const handleSumar = () => {
+        cantidad < item.stock && setCantidad(cantidad + 1)
+    }
+
   return (
-    <Card maxW='sm'>
-        <CardBody mt='6' spacing='3'>
-            <Stack>
-            <Heading size='md'>{producto.titulo}</Heading>
-            <Text>
-                {producto.descripcion}
-            </Text>
-            <Text color='blue.600' fontSize='2x1'>
-                ${producto.precio}
-            </Text>
-            </Stack>
-        </CardBody>
-        <Divider/>
-        <CardFooter>
-            <ButtonGroup spacing='2'>
-                <ItemCount/>
-            </ButtonGroup>
-        </CardFooter>
-    </Card>
+    <div className="container">
+        <div className="producto-detalle">
+            <div>
+                <h3 className="titulo">{item.titulo}</h3>
+                <p className="descripcion">{item.descripcion}</p>
+                <p className="categoria">Categoría: {toCapital(item.categoria)}</p>
+                <p className="precio">${item.precio}</p>
+                <ItemCount
+                  cantidad={cantidad}
+                  handleSumar={handleSumar}
+                  handleRestar={handleRestar}
+                  handleAgregar={() => { addToCart(item, cantidad) }}
+                />
+            </div>
+        </div>
+    </div>
   )
 }
 
