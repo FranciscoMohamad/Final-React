@@ -3,7 +3,8 @@ import ItemDetailContainer from './components/ItemDetailContainer'
 import ItemListContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar'
 import Cart from './components/Cart'
-import { CartProvider } from './context/CartContext'
+import Chekout from './components/Chekout'
+import { CartProvider } from './Context/CartContext'
 import Contacto from './components/Contacto'
 
 const App = () => {
@@ -19,6 +20,7 @@ const App = () => {
           </Route>
           <Route exact path='/contacto' element={<Contacto />}></Route>
           <Route exact path='/cart' element={<Cart />}></Route>
+          <Route exact path='/chekout' element={<Chekout />}></Route>
           <Route exact path='/categoria/:categoriaId' element={<ItemListContainer />}></Route>
           <Route exact path='/producto/:id' element={<ItemDetailContainer />}></Route>
         </Routes>
