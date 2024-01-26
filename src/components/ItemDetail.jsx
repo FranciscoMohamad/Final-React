@@ -20,13 +20,13 @@ const ItemDetail = ( {item} ) => {
     }
 
   return (
-    <div className="container">
+    <div className="contenedor">
         <div className="producto-detalle">
             <div>
                 <h3 className="titulo">{item.titulo}</h3>
                 <p className="descripcion">{item.descripcion}</p>
                 <p className="categoria">Categoría: {toCapital(item.categoria)}</p>
-                <p className="precio">${item.precio}</p>
+                <p className="precio">Precio: ${item.precio}</p>
                 <ItemCount
                   cantidad={cantidad}
                   handleSumar={handleSumar}

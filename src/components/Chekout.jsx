@@ -27,7 +27,7 @@ const Chekout = () => {
 
         if (pedidoId) {
             return (
-                <div>
+                <div className='contenedor'>
                     <h1>Muchas gracias por tu compra</h1>
                     <p>tu numero de pedido es {pedidoId}</p>
                 </div>

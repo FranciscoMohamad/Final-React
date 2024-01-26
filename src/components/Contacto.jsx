@@ -10,7 +10,7 @@ const Contacto = () => {
    
 
     return (
-        <div>
+        <div className="contenedor">
             <h1>CONTACTO</h1>
             <form className='formulario' onSubmit={handleSubmit(enviar)}>
                 <input type="text" placeholder='ingresa tu nombre' {...register("nombre")} />

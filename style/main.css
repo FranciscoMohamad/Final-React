@@ -29,6 +29,8 @@ ul {
     margin-top: 1rem;
 }
 
+
+
 button {
     padding: .5rem;
     border-radius: 1rem;
@@ -47,10 +49,99 @@ button {
     flex-direction: column;
     align-items: center;
 }
+.item-count{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    height: 7rem;
+}
+
+.cantidad{
+    text-align: center;
+    margin: 1rem;
+    width: 5rem;
+}
+
+.menos{
+    margin-top: 4.5rem;
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(165, 96, 165);
+}
+.menos:hover{
+    background-color: white;
+    color: rgb(165, 96, 165);
+    border: 2px solid rgb(165, 96, 165);
+}
+.mas{
+    margin-top: 4.5rem;
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(165, 96, 165);
+}
+.mas:hover{
+    background-color: white;
+    color: rgb(165, 96, 165);
+    border: 2px solid rgb(165, 96, 165);
+}
+.compra-info{
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 1rem;
+    height: 20rem;
+    width: 15rem;
+    margin: 1rem;
+}
+.vaciar{
+    margin-top: 4.5rem;
+    width: 4rem;
+    height: 2rem;
+    background-color: rgb(165, 96, 165);
+}
 
 p {
     padding-top: 3rem;
     font-size: 2rem;
+}
+
+.titulo {
+    font-size: 2rem;
+    text-align: center;
+}
+.descripcion{
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.categoria{
+    font-size: 1rem;
+    margin-left: .5rem;
+}
+.precio {
+    font-size: 1.2rem;
+    text-align: start;
+    margin-bottom: .5rem;
+    margin-left: .5rem;
+}
+.titulo-h1{
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    padding: 1rem;
+}
+.agregar-al-carrito{
+    background-color: rgb(165, 96, 165);
+    padding: .5rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+
+}
+
+.agregar-al-carrito:hover{
+    background-color: white;
+    color: rgb(165, 96, 165);
+    border: 2px solid rgb(165, 96, 165);
 }
 
 .name {
@@ -59,6 +150,13 @@ p {
     margin-top: .5rem;
     margin-left: 1rem;
     font-size: 1.5rem;
+}
+.producto-detalle {
+    border: 2px solid black;
+    border-radius: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    width: 20rem;
 }
 .card {
     margin: 1rem;
