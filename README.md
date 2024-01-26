@@ -12,4 +12,5 @@ Toda la informacion esta almacenada utilizando firabase, los enlaces con react h
 
 
 
+https://github.com/FranciscoMohamad/Final-React/assets/129280665/5a0602b4-cd27-481c-99c2-4232aa5c1aff
 
