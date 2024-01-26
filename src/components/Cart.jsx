@@ -33,7 +33,7 @@ const Cart = () => {
             <button className='vaciar' onClick={handleVaciar}>Vaciar</button>
             <Link className='finalizar-compra' to="/chekout" >Finalizar compra</Link>
           </> :
-          <h2>El Carrito esta Vacio</h2>
+          <h2 className='titulo-h2'>El Carrito esta Vacio</h2>
       }
 
     </div>

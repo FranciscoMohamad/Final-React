@@ -93,10 +93,27 @@ button {
     margin: 1rem;
 }
 .vaciar{
-    margin-top: 4.5rem;
+    margin-top: 1rem;
     width: 4rem;
     height: 2rem;
     background-color: rgb(165, 96, 165);
+}
+.finalizar-compra{
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 8rem;
+    height: 1.5rem;
+    background-color: rgb(165, 96, 165);
+    border-radius: 1rem;
+}
+.titulo-h2{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.margin{
+    margin: 1rem;
 }
 
 p {
@@ -144,6 +161,16 @@ p {
     border: 2px solid rgb(165, 96, 165);
 }
 
+.boton {
+    margin-top: 2rem;
+    margin-left: 6rem;
+    background-color: aliceblue;
+    color:rgb(165, 96, 165) ;
+    border: 2px solid black;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
 .name {
     position: absolute;
     left: 0;
@@ -169,6 +196,7 @@ p {
     flex-direction: column;
     gap: .5rem;
     align-items: start;
+    margin: 1rem;
 }
 .formulario input {
     padding: .5rem;

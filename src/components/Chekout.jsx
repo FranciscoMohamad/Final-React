@@ -28,22 +28,22 @@ const Chekout = () => {
         if (pedidoId) {
             return (
                 <div className='contenedor'>
-                    <h1>Muchas gracias por tu compra</h1>
-                    <p>tu numero de pedido es {pedidoId}</p>
+                    <h1 className='titulo-h2'>Muchas gracias por tu compra</h1>
+                    <p className='margin'>Tu numero de pedido es:  {pedidoId}</p>
                 </div>
             )
         }
 
 
     return (
-        <div>
-            <h1>Finalizar compra</h1>
+        <div className='contenedor'>
+            <h1 className='titulo-h2'>Finalizar compra</h1>
             <form className='formulario' onSubmit={handleSubmit(comprar)}>
                 <input type="text" placeholder='ingresa tu nombre' {...register("nombre")} />
                 <input type="text" placeholder='ingresa tu apellido'  {...register("apellido")} />
                 <input type="email" placeholder='ingresa tu correo'  {...register("correo")} />
                 <input type="phone" placeholder='ingresa tu numero telefonico'  {...register("celular")} />
-                <button type="submit">Comprar</button>
+                <button  className='boton' type="submit">Comprar</button>
             </form>
         </div>
     )
